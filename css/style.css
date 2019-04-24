@@ -5,6 +5,7 @@ body {
     font-size: 15px;
     color: #ffffff;
     background-color: #000000;
+    cursor: url("../images/cursor.png"), auto;
 }
 
 /* scrollbar */
@@ -26,6 +27,7 @@ body {
 
 a {
     color: #ffffff;
+    cursor: url("../images/cursor_red.png"), auto;
 }
 
 nav {
@@ -57,6 +59,13 @@ header h1{
 
 header h4 {
     text-decoration: underline;
+}
+
+#date {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    margin: 0;
 }
 
 #video_contain {
@@ -91,9 +100,58 @@ canvas {
     overflow: hidden;
 }
 
+#image_glitch {
+    width: 100vw;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#eval, .help{
+    opacity: 0;
+}
+
+#glitch {
+    max-height: 25em;
+    background-color: white;
+}
+
 /* about page */
 
 #about {
     padding: 1em;
     max-width: 20em;
 }
+
+/* rainbow */
+
+.rainbow { 
+  background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
+  background-size: 1800% 1800%;
+  
+  -webkit-animation: rainbow 10s ease infinite;
+  -z-animation: rainbow 10s ease infinite;
+  -o-animation: rainbow 10s ease infinite;
+    animation: rainbow 10s ease infinite;}
+  
+  @-webkit-keyframes rainbow {
+      0%{background-position:0% 82%}
+      50%{background-position:100% 19%}
+      100%{background-position:0% 82%}
+  }
+  @-moz-keyframes rainbow {
+      0%{background-position:0% 82%}
+      50%{background-position:100% 19%}
+      100%{background-position:0% 82%}
+  }
+  @-o-keyframes rainbow {
+      0%{background-position:0% 82%}
+      50%{background-position:100% 19%}
+      100%{background-position:0% 82%}
+  }
+  @keyframes rainbow { 
+      0%{background-position:0% 82%}
+      50%{background-position:100% 19%}
+      100%{background-position:0% 82%}
+  }

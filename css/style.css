@@ -129,7 +129,7 @@ input[type="file"] {
     border: 1px solid #ccc;
     display: inline-block;
     padding: 6px 12px;
-    cursor: pointer;
+    cursor: url("../images/cursor_red.png"), auto;
 }
 
 button {
@@ -140,7 +140,16 @@ button {
 
 #about {
     padding: 1em;
+    display: flex;
+    flex-wrap: wrap;  
+}
+
+#site_description {
     max-width: 20em;
+}
+
+#site_description p {
+    margin: 1em;
 }
 
 /* rainbow */

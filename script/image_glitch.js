@@ -1,12 +1,9 @@
 $(document).ready(function() {
     $('input:file').change(function(){
-        $("#eval").css("opacity", 1);
-        $('#eval').on('click', function() {
-            let files = document.getElementById('file').files;
-            if (files.length > 0) {
-            getBase64(files[0]);
-            }
-        });  
+        let files = document.getElementById('file').files;
+        if (files.length > 0) {
+        getBase64(files[0]);
+        }; 
     })
       
       function getBase64(file) {

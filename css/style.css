@@ -95,7 +95,7 @@ canvas {
 }
 
 #random_shit {
-    height: 200vh;
+    min-height: 100vh;
     background-color: #ee0000;
     overflow: hidden;
 }
@@ -115,6 +115,25 @@ canvas {
 #glitch {
     max-height: 25em;
     background-color: white;
+}
+
+#upload_btn {
+    padding-bottom: 1em;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.custom-file-upload {
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+}
+
+button {
+    font-family: 'Anonymous Pro', monospace, Arial, Helvetica, sans-serif;
 }
 
 /* about page */

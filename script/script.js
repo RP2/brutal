@@ -42,7 +42,7 @@ function onPlayerStateChange(event) {
 
 
 $(window).scroll(function(event) {
-    if ($(window).scrollTop() >= $("#video_contain").outerHeight() && player.isMuted()){
+    if ($(window).scrollTop() >= $("#random_shit").outerHeight() && player.isMuted()){
         player.pauseVideo(1);
     } else {
         player.playVideo(1);

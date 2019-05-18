@@ -31,10 +31,11 @@ a {
 }
 
 nav {
+    width: 5em;
+    right: -4em;
     z-index: 1;
     background-color: black;
     position: fixed;
-    right: 0;
     overflow: hidden;
     height: 100vh;
     display: flex;
@@ -46,6 +47,14 @@ nav p {
     writing-mode: vertical-rl;
     text-orientation: sideways;
     transform: rotate(180deg);
+}
+
+#hand {
+    font-size: 3em;
+    position: fixed;
+    right: -1em;
+    top: 50vh;
+    z-index: 2;
 }
 
 header {

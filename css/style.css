@@ -68,6 +68,18 @@ header h4 {
     margin: 0;
 }
 
+.volume {
+    font-size: 1.5em;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    margin-right: 1em;
+}
+
+#un_mute {
+   display: none; 
+}
+
 #video_contain {
     height: 100vh;
     background: rgba(0, 0, 0, .1) url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAYAAABWKLW/AAAAF0lEQVQIW2NkYGD4z8DAwMgAI0AMDA4AI3EBBCKrOnQAAAAASUVORK5CYII=');

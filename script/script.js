@@ -12,11 +12,11 @@ firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 let player;
 function onYouTubeIframeAPIReady() {
   player = new YT.Player('player', {
-    videoId: 'l_eIvgbX6rM',
+    videoId: 'hHW1oY26kxQ',
     playerVars: {
         "autoplay":1,
         "loop":1,
-        "playlist":"l_eIvgbX6rM",
+        "playlist":"hHW1oY26kxQ",
         "modestbranding":1,
         "autohide":1,
         "showinfo":0,
@@ -42,9 +42,22 @@ function onPlayerStateChange(event) {
 
 
 $(window).scroll(function(event) {
-    if ($(window).scrollTop() >= $("#video_contain").outerHeight()){
+    if ($(window).scrollTop() >= $("#video_contain").outerHeight() && player.isMuted()){
         player.pauseVideo(1);
     } else {
         player.playVideo(1);
+    }
+});
+
+$(".volume").on("click", function(){
+    if (player.isMuted()){
+        player.unMute();
+        player.playVideo(1);
+        $("#un_mute").toggle();
+        $("#mute").toggle();
+    } else {
+        player.mute();
+        $("#un_mute").toggle();
+        $("#mute").toggle();
     }
 });
